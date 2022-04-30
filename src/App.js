@@ -4,18 +4,19 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/Navbar";
-//import axios from "axios";
+import axios from "axios";
+import Home from "./components/Home";
 
 function App() {
   return (
     <div className="App">
-      < NavBar >
+      < NavBar />
       < Routes >
-        <Route path="/" element={< home />} />
-        <Route path="/cadastro" element={< cadastro />} />
-        <Route path="/menu" elemente={< menu />} /> 
+        <Route path="/" element={< Home />} />
+        {/* <Route path="/cadastro" element={< cadastro />} />
+        <Route path="/menu" elemente={< menu />} />  */}
       </Routes>
-      </NavBar>
+    
     </div>
   );
 };
