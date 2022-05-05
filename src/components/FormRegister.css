@@ -1,0 +1,34 @@
+h5 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: #393939;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 374px;
+    height: 80px;
+    left: 533px;
+    top: 241px;
+}
+
+.button {
+    background-color: #BC8F9E;
+    border-radius: 8px;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    width: 200px;
+    height: 40px;
+}

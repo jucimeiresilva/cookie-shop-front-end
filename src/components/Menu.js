@@ -14,13 +14,14 @@ const Menu = () => {
           </div>
           <div className="col-md-8">
             <div className="card-body">
-              <h5 className="card-title">Kit 1</h5>
+              <div className="card-title">Kit 1</div>
               <p className="card-text">
-                2 Chocolate cookies with milk chocolate flavor
-              </p>
+                2 Chocolate cookies with milk chocolate flavor</p>
               <p>4 Vanilla Cookies with Milk Chocolate Flavors</p>
               <p>6 Red Velvet Cookies with White Chocolate Chips</p>
+              <div>
               <h5>$39,00</h5>
+              </div>
               <button type="button" className="button">Add to card</button>
             </div>
           </div>

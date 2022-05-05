@@ -31,40 +31,40 @@ class Api {
     }
 
     //verificar se está certo
-    post = async (title) => {
-        try {
-          const { data } = await this.api.post('/', { title });
-          return data;
-        } catch (error) {
-          throw error.response;
-        }
+    // post = async (title) => {
+    //     try {
+    //       const { data } = await this.api.post('/', { title });
+    //       return data;
+    //     } catch (error) {
+    //       throw error.response;
+    //     }
     
-      }
+    //   }
     
-      get = async () => {
-        try {
-          const { data } = await this.api.get('/')
-          return data;
-        } catch (error) {
-          throw error.response;
-        }
-      }
+    //   get = async () => {
+    //     try {
+    //       const { data } = await this.api.get('/')
+    //       return data;
+    //     } catch (error) {
+    //       throw error.response;
+    //     }
+    //   }
     
-      update = async (id) => {
-        try {
-          await this.api.put(`/${id}`);
-        } catch (error) {
-          throw error.response;
-        }
-      }
+    //   update = async (id) => {
+    //     try {
+    //       await this.api.put(`/${id}`);
+    //     } catch (error) {
+    //       throw error.response;
+    //     }
+    //   }
     
-      delete = async (id) => {
-        try {
-          await this.api.delete(`/${id}`)
-        } catch (error) {
-          throw error.response;
-        }
-      }
+    //   delete = async (id) => {
+    //     try {
+    //       await this.api.delete(`/${id}`)
+    //     } catch (error) {
+    //       throw error.response;
+    //     }
+    //   }
                 // até aqui
 
     login = async (user) => {
