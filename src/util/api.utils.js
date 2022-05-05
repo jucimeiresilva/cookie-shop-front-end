@@ -6,6 +6,7 @@ class Api {
             baseURL: 'http://localhost:5001'
         })
 
+        // quando eu peço uma requisição
         this.api.interceptors.request.use((config) => {
             const token = localStorage.getItem('token')
             if (token) {
@@ -18,6 +19,7 @@ class Api {
             console.log(error)
         })
 
+        
         this.api.interceptors.response.use((response) => response,
         (error) => {
             if(error.response.status === 401){
@@ -27,6 +29,43 @@ class Api {
             throw error;
         })
     }
+
+    //verificar se está certo
+    post = async (title) => {
+        try {
+          const { data } = await this.api.post('/', { title });
+          return data;
+        } catch (error) {
+          throw error.response;
+        }
+    
+      }
+    
+      get = async () => {
+        try {
+          const { data } = await this.api.get('/')
+          return data;
+        } catch (error) {
+          throw error.response;
+        }
+      }
+    
+      update = async (id) => {
+        try {
+          await this.api.put(`/${id}`);
+        } catch (error) {
+          throw error.response;
+        }
+      }
+    
+      delete = async (id) => {
+        try {
+          await this.api.delete(`/${id}`)
+        } catch (error) {
+          throw error.response;
+        }
+      }
+                // até aqui
 
     login = async (user) => {
         try {
@@ -38,6 +77,14 @@ class Api {
             throw error.response;
         }
     }
+    
+    signup = async (user) => {
+        try {
+             await this.api.post('/auth/signup', user);
+        } catch (error) {
+            throw error.response;
+        }
+     }
 
 }
 

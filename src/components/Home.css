@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+.logo {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(255.38deg, #BC8F9E 1.67%, rgba(196, 196, 196, 0) 40.51%);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    left: 65px;
+    top: 100px;
+}
+
+.title-cookies {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 45px;
+    letter-spacing: 0.4px;
+    color: #000000;
+
+}
+
+.title-shop {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 55px;
+    letter-spacing: 0.4px;
+    color: #000000;
+}
+
+
+.image {
+    width: 100%;
+}
+
+.text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: #000000;
+}
+
+.text-register {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 60px;
+    text-align: center;
+    color: #000000;
+}
+
+.button {
+    background-color: #BC8F9E;
+    border-radius: 8px;
+    color: white;
+    padding: 5px 32px;
+    text-align:center;
+    text-decoration: none;
+    font-size: 18px;
+    width: 200px;
+    height:40px;
+    
+}
+
+.create-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}

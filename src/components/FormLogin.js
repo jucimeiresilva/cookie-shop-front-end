@@ -38,11 +38,14 @@ const FormLogin = () => {
                 <input id="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
             </div>
             <div>
-                <h5>Remember-me</h5>
+                <h5>Forgot password</h5>
             </div>
             <button type="submit"></button>
             <div>
                 <h5>Nem here? Sign Up</h5>
+            </div>
+            <div>
+                <button type="register"></button>
             </div>
         </form>
     )

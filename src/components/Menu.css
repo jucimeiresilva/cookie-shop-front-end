@@ -1,0 +1,28 @@
+.col-md-4 {
+    text-align: center;
+    
+}
+
+.col-md-8 {
+    text-align: justify;
+}
+
+p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    color: #000000;
+}
+
+h5 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: justify;
+    color: #000000;
+}
+

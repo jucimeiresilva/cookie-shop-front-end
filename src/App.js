@@ -1,14 +1,12 @@
-//import logo from './logo.svg';
-//import './App.css';
-
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/Navbar";
-import axios from "axios";
 import Home from "./components/Home";
+import Menu from "./components/Menu";
+import Register from "./components/FormRegister";
 import Login from "./components/Login";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-//import api from "../util/appi.utils";
 
 function App() {
   return (
@@ -16,8 +14,8 @@ function App() {
       < NavBar />
       < Routes >
         <Route path="/" element={< Home />} />
-        {/* <Route path="/register" element={< register />} />
-        <Route path="/menu" elemente={< menu />} />  */}
+        <Route path="/register" element={< Register />} />
+        <Route path="/menu" element={<Menu/>} /> 
         <Route path="/login" element={<Login/>} />
       </Routes>
     </div>
