@@ -4,7 +4,7 @@ h1 {
   font-weight: 700;
   font-size: 30px;
   line-height: 80px;
-  text-align: center;
+  text-align: justify;
   color: #393939;
 }
 
@@ -15,7 +15,7 @@ h5 {
   font-weight: 700;
   font-size: 30px;
   line-height: 130px;
-  text-align: center;
+  text-align: justify;
   color: #393939;
 }
 
@@ -24,3 +24,4 @@ h5 {
   flex-direction:column;
   margin: 15px;
 }
+
