@@ -1,8 +1,7 @@
-//formulário que está dentro da página do login
-
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import apiUtils from "../util/api.utils";
+import "./Login.css"
 
 const FormLogin = () => {
     const [email, setEmail] = useState('');
@@ -36,16 +35,13 @@ const FormLogin = () => {
             <div>
                 <label htmlFor="password">Password</label>
                 <input id="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
-            </div>
-            <div>
-                <h5>Forgot password</h5>
-            </div>
-            <button type="submit"></button>
+            </div>|
+            <button className="button">Submit</button>
             <div>
                 <h5>Nem here? Sign Up</h5>
             </div>
             <div>
-                <button type="register"></button>
+                <button className="button">Register</button>
             </div>
         </form>
     )

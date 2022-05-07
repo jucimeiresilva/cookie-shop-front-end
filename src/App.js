@@ -6,6 +6,7 @@ import Menu from "./components/Menu";
 import Register from "./components/FormRegister";
 import Login from "./components/Login";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import OrderPage from "./components/OrderPage";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/register" element={< Register />} />
         <Route path="/menu" element={<Menu/>} /> 
         <Route path="/login" element={<Login/>} />
+        <Route path="/order/:id" element={< OrderPage/>} />
       </Routes>
     </div>
   );

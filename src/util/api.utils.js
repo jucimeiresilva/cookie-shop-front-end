@@ -6,7 +6,7 @@ class Api {
             baseURL: 'http://localhost:5001'
         })
 
-        // quando eu peço uma requisição
+       
         this.api.interceptors.request.use((config) => {
             const token = localStorage.getItem('token')
             if (token) {
@@ -30,42 +30,15 @@ class Api {
         })
     }
 
-    //verificar se está certo
-    // post = async (title) => {
-    //     try {
-    //       const { data } = await this.api.post('/', { title });
-    //       return data;
-    //     } catch (error) {
-    //       throw error.response;
-    //     }
-    
-    //   }
-    
-    //   get = async () => {
-    //     try {
-    //       const { data } = await this.api.get('/')
-    //       return data;
-    //     } catch (error) {
-    //       throw error.response;
-    //     }
-    //   }
-    
-    //   update = async (id) => {
-    //     try {
-    //       await this.api.put(`/${id}`);
-    //     } catch (error) {
-    //       throw error.response;
-    //     }
-    //   }
-    
-    //   delete = async (id) => {
-    //     try {
-    //       await this.api.delete(`/${id}`)
-    //     } catch (error) {
-    //       throw error.response;
-    //     }
-    //   }
-                // até aqui
+    getProducts = async () => {
+        try {
+            const { data } = await this.api.get('/products')
+            return data;
+        } catch (error) {
+            throw error.response;
+        }
+    }
+
 
     login = async (user) => {
         try {
@@ -86,9 +59,24 @@ class Api {
         }
      }
 
+     createOrder = async (productId) => {
+         try {
+             const {data} =  await this.api.post('/order', {product: productId})
+             return data
+         } catch (error) {
+             throw error.response;
+         }
+     }
+
+     getOrder = async (orderId) => {
+         try {
+             const {data} = await this.api.get(`/order/${orderId}`)
+             return data
+         } catch (error) {
+             throw error.response;
+         }
+     }
+
 }
-
-
-
 
 export default new Api();

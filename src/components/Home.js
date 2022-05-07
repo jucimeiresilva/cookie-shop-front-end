@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import logo from "../image/logo.jpeg";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
       <div className="create-div">
         <div className="text">Do you want to fall in love with our delights?</div>
         <div className="text-register">Click the button below and register.</div>
-        <button type="button" className="button">Create</button>
+        <NavLink to="/register"><button type="button" className="button">Create</button> </NavLink>
       </div>
     </div>
   );
